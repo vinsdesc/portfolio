@@ -1,0 +1,28 @@
+/*# sourceMappingURL=style.css.map */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.custBorder {
+    border: 1px solid rgb(197, 93, 140);
+}
+
+@font-face {
+    font-family: "neue-montreal-bold";
+    src: url(./assets/fonts/NeueMontreal-Bold.otf);
+}
+
+@font-face {
+    font-family: "neue-montreal-regular";
+    src: url(./assets/fonts/NeueMontreal-Regular.otf);
+}
+
+@font-face {
+    font-family: "neue-montreal-medium";
+    src: url(./assets/fonts/NeueMontreal-Medium.otf);
+}
+
+@font-face {
+    font-family: "neue-montreal-light";
+    src: url(./assets/fonts/NeueMontreal-Light.otf);
+}
