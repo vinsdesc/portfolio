@@ -11,9 +11,9 @@
   <title>Vite App</title>
 </head>
 
-<body class="bg-slate-100 p-12">
+<body class="bg-slate-100 p-4 md:p-12">
   <header id="header"
-    class="fixed z-50  top-12 left-12 right-12 bottom-12 h-[10vh] flex justify-between text-slate-200 mix-blend-difference font-medium text-[25px] ">
+    class="fixed z-50 top-4 md:top-12 left-4 md:left-12 right-4 md:right-12 bottom-2 md:bottom-12 h-[10vh] flex justify-between text-slate-200 mix-blend-difference font-medium text-[25px] ">
     <p>Based in Brussels</p>
     <p>Looking for a job</p>
     <nav>
@@ -27,26 +27,28 @@
 
 
 
-  <section id="page-1" class="h-[90vh]  flex flex-col justify-between ">
-    <section class="justify-between mt-[27vh] font-bold text-[80px]  flex">
-      <section class="uppercase">
+  <section id="page-1"
+    class="page h-[calc(100vh_-_32px)] md:h-[90vh] flex flex-col md:justify-between border-2 border-red-400">
+    <section
+      class="flex flex-col md:flex-row justify-between mt-[10vh] md:mt-[27vh] font-bold md:text-[80px] text-[60px] border-1 ">
+      <section class="uppercase border-1 ">
         <span class="relative w-full">
-          <span class="job inline-block relative">
+          <span class="shaking  inline-block relative">
             <span>F</span><span>r</span><span>o</span><span>n</span><span>t</span>&nbsp;<span>e</span><span>n</span><span>d</span>
             <span class="blue-line block absolute top-[calc(100%_-_1rem)] left-0 w-full h-4 z-20 bg-cyan-400"
               aria-hidden="true"></span>
           </span>
         </span>
         <br>
-        <span class="job">
+        <span class="shaking ">
           <span>d</span><span>e</span><span>v</span><span>e</span><span>l</span><span>o</span><span>p</span><span>e</span><span>r</span></span>
       </section>
-      <section class="basis-1/5">
-        <img class="z-10 profile_picture" src="./assets/img/me.png" alt="moi vincent descamps" srcset="">
+      <section class="md:basis-1/5 border-1">
+        <img class="max-sm:h-[40vh] profile_picture" src="./assets/img/me.png" alt="moi vincent descamps" srcset="">
       </section>
     </section>
-    <section id="page1-footer" class="flex justify-between items-center">
-      <section class="font-bold text-[80px]">
+    <section id="page1-footer" class="page flex justify-between items-center">
+      <section class="leading-[50px] font-bold text-[60px] md:text-[80px]">
         <article class="name">
           <span>V</span><span>i</span><span>n</span><span>c</span><span>e</span><span>n</span><span>t</span>
           <span>D</span><span>e</span><span>s</span><span>c</span><span>a</span><span>m</span><span>p</span><span>s</span>
@@ -66,20 +68,20 @@
 
   <!-- <section class="h-screen"></section> -->
 
-  <section id="page2" class="h-[calc(100vh_-_208px)] mt-36 mb-12 flex flex-col justify-between">
+  <section id="page2" class="job-container h-[calc(100vh_-_208px)] mt-36 mb-12 flex flex-col justify-between">
     <section class="row-span-5 flex justify-between">
       <section class="flex flex-col justify-between">
         <span class="relative w-full ">
-          <span class="font-bold text-[80px] inline-block relative uppercase">
-            Proxistore
+          <span class="job-name font-bold text-[80px] inline-block relative uppercase">
+            <span>P</span><span>r</span><span>o</span><span>x</span><span>i</span><span>s</span><span>t</span><span>o</span><span>r</span><span>e</span>
           </span>
-          <p class="text-[25px] normal-case font-regular">A DSP platform to buy digital advertisement</p>
+          <p class="job-headline text-[25px] normal-case font-regular">A DSP platform to buy digital advertisement</p>
         </span>
 
-        <div class="">
+        <div class="job-info">
           <p class="text-[25px] uppercase font-medium border-b-2 py-2">PROJECT INFO</p>
           <div class=" text-[25px] font-medium">
-            <p class="border-b-2 py-2">Role: <span class="font-regular float-right">Front end developper</span>
+            <p class="border-b-2 py-2">Role: <span class="font-regular float-right">Front end developer</span>
             </p>
             <p class="border-b-2 py-2">Years: <span class="font-regular float-right">2017-2022</span></p>
           </div>
@@ -89,12 +91,46 @@
 
 
       <div class=" basis-5/12 ">
-        <img class="w-full rounded-l-[90px]" src="../assets/img/px_1.png" alt="" srcset="">
+        <img class="job-picture w-full rounded-l-[90px]" src="../assets/img/px_1.png" alt="" srcset="">
       </div>
     </section>
 
-    <footer class="">
+    <footer class="page-nbr">
       <img src="../assets/img/page1.svg" alt="page 1" />
+    </footer>
+  </section>
+
+
+  <section class="h-20"></section>
+
+  <section class="job-container h-[calc(100vh_-_208px)] mt-36 mb-12 flex flex-col justify-between">
+    <section class="row-span-5 flex justify-between">
+      <section class="basis-5/12 flex flex-col justify-between">
+        <span class="relative w-full ">
+          <span class="job-name font-bold text-[80px] inline-block relative uppercase">
+            <span>C</span><span>a</span><span>s</span><span>a</span><span>l</span><span>i</span><span>n</span><span>a</span>
+          </span>
+          <p class="job-headline text-[25px] normal-case font-regular">A fake e-commerce platform</p>
+        </span>
+
+        <div class="job-info">
+          <p class="text-[25px] uppercase font-medium border-b-2 py-2">PROJECT INFO</p>
+          <div class=" text-[25px] font-medium">
+            <p class="border-b-2 py-2">Roles: <span class="font-regular float-right">Design and
+                development</span>
+
+            </p>
+            <p class="border-b-2 py-2">Years: <span class="font-regular float-right">2017-2022</span></p>
+          </div>
+        </div>
+
+      </section>
+      <div class="basis-5/12">
+        <img class="job-picture w-full rounded-l-[90px]" src="../assets/img/casalina.png" alt="" srcset="">
+      </div>
+    </section>
+    <footer class="page-nbr">
+      <img src="../assets/img/page2.svg" alt="page 2" />
     </footer>
   </section>
 
