@@ -7,12 +7,24 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 const closeMenu = document.querySelector('#closeMenu');
 const mobileMenu = document.querySelector('#mobile-menu');
+const mobileMenuLinks = document.querySelectorAll('#mobile-menu li');
 const menuBtn = document.querySelector('#menu-btn');
 
 menuBtn.addEventListener('click', () => {
   mobileMenu.classList.add('grid');
   mobileMenu.classList.remove('hidden');
 })
+
+mobileMenu.addEventListener('click', (e) => {
+  if (e.target.tagName === 'A') {
+    mobileMenu.classList.add('hidden');
+    mobileMenu.classList.remove('grid');
+  }
+})
+
+
+
+
 
 closeMenu.addEventListener('click', () => {
   mobileMenu.classList.add('hidden');
