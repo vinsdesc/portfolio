@@ -24,8 +24,6 @@ mobileMenu.addEventListener('click', (e) => {
 
 
 
-
-
 closeMenu.addEventListener('click', () => {
   mobileMenu.classList.add('hidden');
   mobileMenu.classList.remove('grid');
