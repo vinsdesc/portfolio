@@ -12,12 +12,15 @@
 </head>
 
 <body class="bg-slate-100 p-4 md:p-12">
+
   <header id="header"
-    class="fixed z-50 top-4 md:top-12 left-4 md:left-12 right-4 md:right-12 bottom-2 md:bottom-12 h-[10vh] flex justify-between text-slate-200 mix-blend-difference font-medium text-[25px] ">
-    <p>Based in Brussels</p>
-    <p>Looking for a job</p>
-    <nav>
-      <ul class="flex gap-4 cursor-pointer">
+    class="fixed z-40 top-4 md:top-12 left-4 md:left-12 right-4 md:right-12 bottom-2 md:bottom-12 h-[10vh] flex justify-between text-slate-200 mix-blend-difference font-medium text-[25px] ">
+    <p class="md:hidden">Vincent Descamps</p>
+    <a id="menu-btn" class="md:hidden mr-4">Menu</a>
+    <p class="hidden md:block">Based in Brussels</p>
+    <p class="hidden md:block">Looking for a job</p>
+    <nav class="hidden md:block">
+      <ul class="flex gap-4 cursor-pointer ">
         <li>Work</li>
         <li>About</li>
         <li>Contact</li>
@@ -25,17 +28,36 @@
     </nav>
   </header>
 
+  <!-- MOBILE MENU -->
+  <section id="mobile-menu"
+    class="hidden fixed sm:hidden h-screen top-0 left-0 right-0 bottom-0 z-50 bg-slate-700 grid-cols-6 p-4 text-white text-[25px] font-medium">
+    <p class="col-start-1 col-end-6">Vincent Descamps</p>
+    <div class="col-end-8"> <button id="closeMenu">Close</button></div>
+    <section class="row-start-7 row-end-7 col-start-1 col-end-6 self-end">
+      <nav>
+        <ul class="uppercase text-[50px] leading-[4rem] font-extrabold">
+          <li><a href="">Home</a></li>
+          <li><a href="">Work</a></li>
+          <li><a href="">About</a></li>
+          <li><a href="">Contact</a></li>
+        </ul>
+        <p class="text-[25px] my-4">Based in Brussels</p>
+        <p class="text-[25px] my-4">Looking for a job</p>
+    </section>
+    </nav>
+  </section>
+
 
 
   <section id="page-1"
-    class="page h-[calc(100vh_-_32px)] md:h-[90vh] flex flex-col md:justify-between border-2 border-red-400">
-    <section
-      class="flex flex-col md:flex-row justify-between mt-[10vh] md:mt-[27vh] font-bold md:text-[80px] text-[60px] border-1 ">
-      <section class="uppercase border-1 ">
-        <span class="relative w-full">
-          <span class="shaking  inline-block relative">
+    class="page h-[calc(100vh_-_70px)] md:h-[calc(90vh_-_48px)] w-full mt-[5vh] md:mt-[10vh] grid grid-rows-4 grid-cols-6 md:grid-cols-12 md:grid-rows-none md:pb-12 items-star ">
+
+    <section class="col-start-1 col-end-7 self-start pt-4 md:pt-0  md:flex-row">
+      <section class="uppercase font-bold md:text-[80px] text-[50px] leading-[1em] md:leading-[1.2em] ">
+        <span class="w-full">
+          <span class="shaking inline-block relative">
             <span>F</span><span>r</span><span>o</span><span>n</span><span>t</span>&nbsp;<span>e</span><span>n</span><span>d</span>
-            <span class="blue-line block absolute top-[calc(100%_-_1rem)] left-0 w-full h-4 z-20 bg-cyan-400"
+            <span class="blue-line block absolute top-[calc(100%_-_.1em)] left-0 w-full h-2 md:h-4 z-20 bg-cyan-400"
               aria-hidden="true"></span>
           </span>
         </span>
@@ -43,96 +65,104 @@
         <span class="shaking ">
           <span>d</span><span>e</span><span>v</span><span>e</span><span>l</span><span>o</span><span>p</span><span>e</span><span>r</span></span>
       </section>
-      <section class="md:basis-1/5 border-1">
-        <img class="max-sm:h-[40vh] profile_picture" src="./assets/img/me.png" alt="moi vincent descamps" srcset="">
-      </section>
     </section>
-    <section id="page1-footer" class="page flex justify-between items-center">
-      <section class="leading-[50px] font-bold text-[60px] md:text-[80px]">
-        <article class="name">
+
+    <!-- PROFILE PIC  -->
+
+    <section class="row-span-2 row-start-2 col-span-4 md:col-start-10 md:row-end-3 md:row-span-3 self-end">
+      <img class=" profile_picture" src="./assets/img/me.png" alt="moi vincent descamps" srcset="">
+    </section>
+
+    <!-- VINCENT -->
+    <section id="page1-footer" class="page col-start-1 col-end-7 md:row-end-3 md:col-end-4 self-end">
+      <section class="leading-[1em] md:leading-[1.2em] font-bold text-[50px] md:text-[80px] md:mt-12">
+        <article class="name uppercase  pb-4 md:pb-0">
           <span>V</span><span>i</span><span>n</span><span>c</span><span>e</span><span>n</span><span>t</span>
           <span>D</span><span>e</span><span>s</span><span>c</span><span>a</span><span>m</span><span>p</span><span>s</span>
         </article>
       </section>
-      <article class="scroll">
-        Scroll
-        <svg class="relative left-4" width="24" height="69" viewBox="0 0 24 69" fill="none"
-          xmlns="http://www.w3.org/2000/svg">
-          <path
-            d="M10.9393 68.0607C11.5251 68.6464 12.4749 68.6464 13.0607 68.0607L22.6066 58.5147C23.1924 57.9289 23.1924 56.9792 22.6066 56.3934C22.0208 55.8076 21.0711 55.8076 20.4853 56.3934L12 64.8787L3.51472 56.3934C2.92893 55.8076 1.97919 55.8076 1.3934 56.3934C0.807614 56.9792 0.807614 57.9289 1.3934 58.5147L10.9393 68.0607ZM10.5 6.55671e-08L10.5 67L13.5 67L13.5 -6.55671e-08L10.5 6.55671e-08Z"
-            fill="black" />
-        </svg>
-      </article>
     </section>
+    <article class="scroll row-start-3 col-start-6 md:row-end-2 md:col-start-8 uppercase self-end pb-2">
+      <svg class="relative left-[6px] top-0" width="24" height="69" viewBox="0 0 24 69" fill="none"
+        xmlns="http://www.w3.org/2000/svg">
+        <path
+          d="M10.9393 68.0607C11.5251 68.6464 12.4749 68.6464 13.0607 68.0607L22.6066 58.5147C23.1924 57.9289 23.1924 56.9792 22.6066 56.3934C22.0208 55.8076 21.0711 55.8076 20.4853 56.3934L12 64.8787L3.51472 56.3934C2.92893 55.8076 1.97919 55.8076 1.3934 56.3934C0.807614 56.9792 0.807614 57.9289 1.3934 58.5147L10.9393 68.0607ZM10.5 6.55671e-08L10.5 67L13.5 67L13.5 -6.55671e-08L10.5 6.55671e-08Z"
+          fill="black" />
+      </svg>
+    </article>
   </section>
 
-  <!-- <section class="h-screen"></section> -->
 
-  <section id="page2" class="job-container h-[calc(100vh_-_208px)] mt-36 mb-12 flex flex-col justify-between">
-    <section class="row-span-5 flex justify-between">
-      <section class="flex flex-col justify-between">
-        <span class="relative w-full ">
-          <span class="job-name font-bold text-[80px] inline-block relative uppercase">
-            <span>P</span><span>r</span><span>o</span><span>x</span><span>i</span><span>s</span><span>t</span><span>o</span><span>r</span><span>e</span>
-          </span>
-          <p class="job-headline text-[25px] normal-case font-regular">A DSP platform to buy digital advertisement</p>
+
+  <!-- PAGE 2 -->
+
+  <section id="page2"
+    class="job-container page h-[calc(100vh_-_48px)] md:h-[calc(95vh_-_48px)] grid grid-cols-6 gap-y-2 md:grid-cols-12 md:gap-y-12 self-start w-full mt-[5vh]">
+
+    <section class="col-span-6 pt-4 md:col-span-12">
+      <span class="relative w-full ">
+        <span class="job-name font-bold text-[50px] md:text-[80px] relative uppercase">
+          <span>P</span><span>r</span><span>o</span><span>x</span><span>i</span><span>s</span><span>t</span><span>o</span><span>r</span><span>e</span>
         </span>
-
-        <div class="job-info">
-          <p class="text-[25px] uppercase font-medium border-b-2 py-2">PROJECT INFO</p>
-          <div class=" text-[25px] font-medium">
-            <p class="border-b-2 py-2">Role: <span class="font-regular float-right">Front end developer</span>
-            </p>
-            <p class="border-b-2 py-2">Years: <span class="font-regular float-right">2017-2022</span></p>
-          </div>
-        </div>
-
-      </section>
-
-
-      <div class=" basis-5/12 ">
-        <img class="job-picture w-full rounded-l-[90px]" src="../assets/img/px_1.png" alt="" srcset="">
-      </div>
+      </span>
     </section>
 
-    <footer class="page-nbr">
-      <img src="../assets/img/page1.svg" alt="page 1" />
+    <p class="col-span-6 md:col-span-12 job-headline text-[20px] normal-case font-regular ">A DSP platform to
+      buy digital advertisement</p>
+
+    <section class="job-info col-span-6  md:col-span-6">
+      <p class="text-[25px] uppercase font-medium border-b-2 py-2">PROJECT INFO</p>
+      <div class=" text-[20px] font-medium">
+        <p class="border-b-2 py-2">Role: <span class="font-regular float-right">Front end developer</span>
+        </p>
+        <p class="border-b-2 py-2">Years: <span class="font-regular float-right">2017-2022</span></p>
+      </div>
+    </section>
+    <div class="col-start-1 col-span-4 md:col-start-9 md:col-end-13 ">
+      <img class="job-picture max-sm:h-full" src="../assets/img/px_1.png" alt="" srcset="">
+    </div>
+
+    <footer class="page-nbr md:row-end-7 col-start-1 row-end-6 self-end md:self-end ">
+      <img src="../assets/img/page1.svg" class="md:float-right object-cover" alt="page 1" />
     </footer>
   </section>
 
 
   <section class="h-20"></section>
 
-  <section class="job-container h-[calc(100vh_-_208px)] mt-36 mb-12 flex flex-col justify-between">
-    <section class="row-span-5 flex justify-between">
-      <section class="basis-5/12 flex flex-col justify-between">
-        <span class="relative w-full ">
-          <span class="job-name font-bold text-[80px] inline-block relative uppercase">
-            <span>C</span><span>a</span><span>s</span><span>a</span><span>l</span><span>i</span><span>n</span><span>a</span>
-          </span>
-          <p class="job-headline text-[25px] normal-case font-regular">A fake e-commerce platform</p>
+  <section
+    class="job-container page h-[calc(100vh_-_48px)] md:h-[calc(95vh_-_48px)] grid grid-cols-6 gap-y-2 md:grid-cols-12 md:gap-y-12 self-start w-full mt-[5vh]">
+    <section class="col-span-6 md:col-span-12">
+      <span class="relative w-full ">
+        <span class="job-name pt-4 font-bold text-[50px] md:text-[80px] relative uppercase">
+          <span>C</span><span>a</span><span>s</span><span>a</span><span>l</span><span>i</span><span>n</span><span>a</span>
         </span>
+      </span>
+    </section>
 
-        <div class="job-info">
-          <p class="text-[25px] uppercase font-medium border-b-2 py-2">PROJECT INFO</p>
-          <div class=" text-[25px] font-medium">
-            <p class="border-b-2 py-2">Roles: <span class="font-regular float-right">Design and
-                development</span>
+    <p class="col-span-6 md:col-span-12 job-headline text-[20px] normal-case font-regular ">A fake e-commerce platform
+    </p>
 
-            </p>
-            <p class="border-b-2 py-2">Years: <span class="font-regular float-right">2017-2022</span></p>
-          </div>
-        </div>
-
-      </section>
-      <div class="basis-5/12">
-        <img class="job-picture w-full rounded-l-[90px]" src="../assets/img/casalina.png" alt="" srcset="">
+    <section class="job-info col-span-6  md:col-span-6">
+      <p class="text-[25px] uppercase font-medium border-b-2 py-2">PROJECT INFO</p>
+      <div class=" text-[20px] font-medium">
+        <p class="border-b-2 py-2">Roles: <span class="font-regular float-right">Design and
+            development</span>
+        </p>
+        <p class="border-b-2 py-2">Years: <span class="font-regular float-right">2017-2022</span></p>
       </div>
     </section>
-    <footer class="page-nbr">
-      <img src="../assets/img/page2.svg" alt="page 2" />
+    <div class="col-start-1 col-span-4 md:col-start-9 md:col-end-13">
+      <img class="job-picture max-sm:h-full " src="../assets/img/casalina.png" alt="" srcset="">
+    </div>
+    <footer class="page-nbr md:row-end-7 col-start-1 row-end-6 self-end md:self-end ">
+      <img src="../assets/img/page2.svg" class="float-right" alt="page 2" />
     </footer>
+
   </section>
+
+
+
 
 
 </body>

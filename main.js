@@ -5,6 +5,23 @@ import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 
+const closeMenu = document.querySelector('#closeMenu');
+const mobileMenu = document.querySelector('#mobile-menu');
+const menuBtn = document.querySelector('#menu-btn');
+
+menuBtn.addEventListener('click', () => {
+  mobileMenu.classList.add('grid');
+  mobileMenu.classList.remove('hidden');
+})
+
+closeMenu.addEventListener('click', () => {
+  mobileMenu.classList.add('hidden');
+  mobileMenu.classList.remove('grid');
+})
+
+
+
+
 gsap.registerPlugin(ScrollTrigger)
 
 gsap.from(".scroll", { y: -120, opacity: .2, duration: 1 });
@@ -18,7 +35,7 @@ jobLetters.forEach(letter => {
 
 
 gsap.timeline()
-  // .from(".profile_picture", { rotation: 180, y: 120, opacity: 0, duration: 1.5 })
+  .from(".profile_picture", { rotation: 180, y: 120, opacity: 0, duration: 1.5 })
   .from('.name', { opacity: -1, y: '-3em', duration: 2 }, ">-1")
   .from('.shaking span', { opacity: 0, x: '100%', stagger: 0.15, ease: 'back.out(2)' }, ">-30%")
   .from(".blue-line", { width: 0, duration: 2 }, ">-50%")
