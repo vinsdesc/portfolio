@@ -21,9 +21,10 @@
     <p class="hidden md:block">Looking for a job</p>
     <nav class="hidden md:block">
       <ul class="flex gap-4 cursor-pointer ">
-        <li>Work</li>
-        <li>About</li>
-        <li>Contact</li>
+        <li><a href="">Home</a></li>
+        <li><a href="#work">Work</a></li>
+        <!-- <li>About</li> -->
+        <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
   </header>
@@ -38,8 +39,8 @@
         <ul id="" class="uppercase text-[50px] leading-[4rem] font-extrabold">
           <li><a href="">Home</a></li>
           <li><a href="#work">Work</a></li>
-          <li><a href="">About</a></li>
-          <li><a href="">Contact</a></li>
+          <!-- <li><a href="">About</a></li> -->
+          <li><a href="#contact">Contact</a></li>
         </ul>
         <p class="text-[25px] my-4">Based in Brussels</p>
         <p class="text-[25px] my-4">Looking for a job</p>
@@ -97,7 +98,7 @@
   <!-- PAGE 2 -->
 
   <section id="work"
-    class="job-container page h-[calc(100vh_-_48px)] md:h-[calc(95vh_-_48px)] grid grid-cols-6 gap-y-2 md:grid-cols-12 md:gap-y-12 self-start pt-6 w-full mt-[5vh]">
+    class="job-container page h-[calc(100vh_-_48px)] md:h-[calc(90vh_-_48px)] grid grid-cols-6 gap-y-2 md:grid-cols-12 md:gap-y-12 self-start md:pt-[10vh] w-full mt-[5vh]">
 
     <section class="col-span-6 pt-4 md:col-span-12">
       <span class="relative w-full ">
@@ -110,7 +111,7 @@
     <p class="col-span-6 md:col-span-12 job-headline text-[20px] normal-case font-regular ">A DSP platform to
       buy digital advertisement</p>
 
-    <section class="job-info col-span-6  md:col-span-6">
+    <section class="job-info col-span-6  md:col-start-1">
       <p class="text-[25px] uppercase font-medium border-b-2 py-2">PROJECT INFO</p>
       <div class=" text-[20px] font-medium">
         <p class="border-b-2 py-2">Role: <span class="font-regular float-right">Front end developer</span>
@@ -119,19 +120,22 @@
       </div>
     </section>
     <div class="col-start-1 col-span-4 md:col-start-9 md:col-end-13 ">
-      <img class="job-picture max-sm:h-full" src="./public/img/px_1.png" alt="" srcset="">
+      <a target="_blank" href="https://www.proxistore.com/"><img class="job-picture  object-cover"
+          src="./public/img/px_1.png" alt="" srcset=""></a>
     </div>
 
-    <footer class="page-nbr md:row-end-7 col-start-1 row-end-6 self-end md:self-end ">
-      <img src="./public/img/page1.svg" class="md:float-right object-cover" alt="page 1" />
+    <footer class="page-nbr col-start-1 row-end-6  md:row-start-4 self-end  ">
+      <img src="./public/img/page1.svg" class="md:relative md:bottom-12 object-cover" alt="page 1" />
     </footer>
   </section>
 
 
   <section class="h-20"></section>
 
+
+  <!-- CASALINA -->
   <section
-    class="job-container page h-[calc(100vh_-_48px)] md:h-[calc(95vh_-_48px)] grid grid-cols-6 gap-y-2 md:grid-cols-12 md:gap-y-12 self-start w-full mt-[5vh]">
+    class="job-container  page h-[calc(100vh_-_48px)] md:h-[calc(90vh_-_48px)] grid grid-cols-6 gap-y-2 md:grid-cols-12 md:gap-y-12 self-start md:mt-[10vh] w-full mt-[5vh]">
     <section class="col-span-6 md:col-span-12">
       <span class="relative w-full ">
         <span class="job-name pt-4 font-bold text-[50px] md:text-[80px] relative uppercase">
@@ -153,12 +157,40 @@
       </div>
     </section>
     <div class="col-start-1 col-span-4 md:col-start-9 md:col-end-13">
-      <img class="job-picture max-sm:h-full " src="./public/img/casalina.png" alt="" srcset="">
+      <a target="_blank" href="https://bsr-front.vercel.app/"><img class="job-picture max-sm:h-full "
+          src="./public/img/casalina.png" alt="" srcset=""></a>
     </div>
-    <footer class="page-nbr md:row-end-7 col-start-1 row-end-6 self-end md:self-end ">
-      <img src="./public/img/page2.svg" class="float-right" alt="page 2" />
+    <footer class="page-nbr col-start-1 row-end-6  md:row-start-4 self-end  ">
+      <img src="./public/img/page2.svg" class="md:relative md:bottom-14 object-cover" alt="page 2" />
     </footer>
 
+  </section>
+
+
+  <!-- CONTACT -->
+
+  <section id="contact"
+    class="h-[calc(100vh_-_48px)] md:h-[calc(90vh_-_48px)] flex flex-col justify-center items-center text-center mt-[5vh] md:mt-[10vh] gap-2">
+    <div>
+      <h4 class="text-[25px] mt-12 ">Send me a message</h4>
+      <h1 class="text-[50px] md:text-[120px] font-bold cursor-pointer overflow-hidden">
+        <a href="mailto:vins7332@gmail.com">
+          @VINCENT.COM
+          <span class="underline block w-0 relative bottom-2 md:bottom-5 bg-current h-2 md:h-4"></span>
+        </a>
+      </h1>
+    </div>
+    <div>
+      <h4 class="text-[25px] mt-12 ">Or let's connect with
+
+      </h4>
+      <h1 class="text-[50px]  md:text-[120px] font-bold cursor-pointer overflow-hidden"> <a target="_blank"
+          href="https://www.linkedin.com/in/vincent-descamps-131548109/">LINKEDIN
+          <span class="underline block w-0 relative bottom-2 md:bottom-5 bg-current h-2 md:h-4"></span></a>
+      </h1>
+
+
+    </div>
   </section>
 
 
