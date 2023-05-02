@@ -11,16 +11,18 @@
   <title>Vite App</title>
 </head>
 
-<body class="bg-slate-100 p-4 md:p-12">
+<body class="bg-slate-200 p-4 md:p-12">
+
+  <div class="cursor"></div>
 
   <header id="header"
-    class="fixed z-40 top-4 md:top-12 left-4 md:left-12 right-4 md:right-12 bottom-2 md:bottom-12 h-[10vh] flex justify-between text-slate-200 mix-blend-difference font-medium text-[25px] ">
+    class="fixed  z-40 top-4 md:top-12 left-4 md:left-12 right-4 md:right-12 bottom-2 md:bottom-12 h-[10vh] flex justify-between text-slate-200 mix-blend-difference font-medium text-[25px] ">
     <p class="md:hidden">Vincent Descamps</p>
     <a id="menu-btn" class="md:hidden mr-4">Menu</a>
     <p class="hidden md:block">Based in Brussels</p>
     <p class="hidden md:block">Looking for a job</p>
     <nav class="hidden md:block">
-      <ul class="flex gap-4 cursor-pointer ">
+      <ul class="flex gap-4 cursor-pointer cursor-scale small">
         <li><a href="">Home</a></li>
         <li><a href="#work">Work</a></li>
         <!-- <li>About</li> -->
@@ -36,7 +38,7 @@
     <div class="col-end-8"> <button id="closeMenu">Close</button></div>
     <section class="row-start-7 row-end-7 col-start-1 col-end-6 self-end">
       <nav>
-        <ul id="" class="uppercase text-[50px] leading-[4rem] font-extrabold">
+        <ul id="" class=" uppercase text-[45px] leading-[4rem] font-extrabold">
           <li><a href="">Home</a></li>
           <li><a href="#work">Work</a></li>
           <!-- <li><a href="">About</a></li> -->
@@ -54,7 +56,7 @@
     class="page h-[calc(100vh_-_70px)] md:h-[calc(90vh_-_48px)] w-full mt-[5vh] md:mt-[10vh] grid grid-rows-4 grid-cols-6 md:grid-cols-12 md:grid-rows-none md:pb-12 items-star ">
 
     <section class="col-start-1 col-end-7 self-start pt-4 md:pt-0  md:flex-row">
-      <section class="uppercase font-bold md:text-[80px] text-[50px] leading-[1em] md:leading-[1.2em] ">
+      <section class="uppercase font-bold md:text-[80px] text-[45px] leading-[1em] md:leading-[1.2em] ">
         <span class="w-full">
           <span class="shaking inline-block relative">
             <span>F</span><span>r</span><span>o</span><span>n</span><span>t</span>&nbsp;<span>e</span><span>n</span><span>d</span>
@@ -76,7 +78,7 @@
 
     <!-- VINCENT -->
     <section id="page1-footer" class="page col-start-1 col-end-7 md:row-end-3 md:col-end-4 self-end">
-      <section class="leading-[1em] md:leading-[1.2em] font-bold text-[50px] md:text-[80px] md:mt-12">
+      <section class="leading-[1em] md:leading-[1.2em] font-bold text-[45px] md:text-[80px] md:mt-12">
         <article class="name uppercase  pb-4 md:pb-0">
           <span>V</span><span>i</span><span>n</span><span>c</span><span>e</span><span>n</span><span>t</span>
           <span>D</span><span>e</span><span>s</span><span>c</span><span>a</span><span>m</span><span>p</span><span>s</span>
@@ -102,7 +104,7 @@
 
     <section class="col-span-6 pt-4 md:col-span-12">
       <span class="relative w-full ">
-        <span class="job-name font-bold text-[50px] md:text-[80px] relative uppercase">
+        <span class="job-name font-bold text-[45px] md:text-[80px] relative uppercase">
           <span>P</span><span>r</span><span>o</span><span>x</span><span>i</span><span>s</span><span>t</span><span>o</span><span>r</span><span>e</span>
         </span>
       </span>
@@ -120,7 +122,7 @@
       </div>
     </section>
     <div class="col-start-1 col-span-4 md:col-start-9 md:col-end-13 ">
-      <a target="_blank" href="https://www.proxistore.com/"><img class="job-picture  object-cover"
+      <a target="_blank" href="https://www.proxistore.com/"><img class="cursor-scale job-picture  object-cover"
           src="./public/img/px_1.png" alt="" srcset=""></a>
     </div>
 
@@ -135,10 +137,10 @@
 
   <!-- CASALINA -->
   <section
-    class="job-container  page h-[calc(100vh_-_48px)] md:h-[calc(90vh_-_48px)] grid grid-cols-6 gap-y-2 md:grid-cols-12 md:gap-y-12 self-start md:mt-[10vh] w-full mt-[5vh]">
+    class="job-container page h-[calc(100vh_-_48px)] md:h-[calc(90vh_-_48px)] grid grid-cols-6 gap-y-2 md:grid-cols-12 md:gap-y-12 self-start md:pt-[10vh] w-full mt-[5vh]">
     <section class="col-span-6 md:col-span-12">
       <span class="relative w-full ">
-        <span class="job-name pt-4 font-bold text-[50px] md:text-[80px] relative uppercase">
+        <span class="job-name pt-4 font-bold text-[45px] md:text-[80px] relative uppercase">
           <span>C</span><span>a</span><span>s</span><span>a</span><span>l</span><span>i</span><span>n</span><span>a</span>
         </span>
       </span>
@@ -157,7 +159,7 @@
       </div>
     </section>
     <div class="col-start-1 col-span-4 md:col-start-9 md:col-end-13">
-      <a target="_blank" href="https://bsr-front.vercel.app/"><img class="job-picture max-sm:h-full "
+      <a target="_blank" href="https://bsr-front.vercel.app/"><img class="cursor-scale job-picture max-sm:h-full "
           src="./public/img/casalina.png" alt="" srcset=""></a>
     </div>
     <footer class="page-nbr col-start-1 row-end-6  md:row-start-4 self-end  ">
@@ -167,13 +169,15 @@
   </section>
 
 
+  <div class="h-20"></div>
   <!-- CONTACT -->
+
 
   <section id="contact"
     class="h-[calc(100vh_-_48px)] md:h-[calc(90vh_-_48px)] flex flex-col justify-center items-center text-center mt-[5vh] md:mt-[10vh] gap-2">
     <div>
       <h4 class="text-[25px] mt-12 ">Send me a message</h4>
-      <h1 class="text-[50px] md:text-[120px] font-bold cursor-pointer overflow-hidden">
+      <h1 class="cursor-scale text-[45px] md:text-[120px] font-bold cursor-pointer overflow-hidden">
         <a href="mailto:vins7332@gmail.com">
           @VINCENT.COM
           <span class="underline block w-0 relative bottom-2 md:bottom-5 bg-current h-2 md:h-4"></span>
@@ -184,7 +188,7 @@
       <h4 class="text-[25px] mt-12 ">Or let's connect with
 
       </h4>
-      <h1 class="text-[50px]  md:text-[120px] font-bold cursor-pointer overflow-hidden"> <a target="_blank"
+      <h1 class="cursor-scale text-[45px]  md:text-[120px] font-bold cursor-pointer overflow-hidden"> <a target="_blank"
           href="https://www.linkedin.com/in/vincent-descamps-131548109/">LINKEDIN
           <span class="underline block w-0 relative bottom-2 md:bottom-5 bg-current h-2 md:h-4"></span></a>
       </h1>
