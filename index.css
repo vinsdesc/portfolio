@@ -11,6 +11,12 @@ html {
     scroll-behavior: smooth;
 }
 
+:root {
+    --doc-height: 100%;
+}
+
+
+
 @font-face {
     font-family: "neue-montreal-bold";
     src: url(./assets/fonts/NeueMontreal-Bold.otf);

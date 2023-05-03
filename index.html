@@ -8,10 +8,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="index.css">
   <script src="main.js" type="module"></script>
-  <title>Vite App</title>
+  <title>Vincent Descamps Portfolio</title>
 </head>
 
-<body class="bg-slate-100 p-4 md:p-12">
+<body class="bg-slate-100 p-4 md:p-12 border-2 border-red-600">
 
   <header id="header"
     class="fixed z-40 top-4 md:top-12 left-4 md:left-12 right-4 md:right-12 bottom-2 md:bottom-12 h-[10vh] flex justify-between text-slate-200 mix-blend-difference font-medium text-[25px] ">
@@ -50,8 +50,7 @@
 
 
   <section id="page-1"
-    class="page h-[calc(100vh_-_70px)] md:h-[calc(90vh_-_48px)] w-full mt-[5vh] md:mt-[10vh] grid grid-rows-4 grid-cols-6 md:grid-cols-12 md:grid-rows-none md:pb-12 items-star ">
-
+    class="page h-[calc(var(--doc-height)_-_70px)] md:h-[calc(90vh_-_48px)] w-full mt-[5vh] md:mt-[10vh] grid grid-rows-4 grid-cols-6 md:grid-cols-12 md:grid-rows-none md:pb-12 items-star ">
     <section class="col-start-1 col-end-7 self-start pt-4 md:pt-0  md:flex-row">
       <section class="uppercase font-bold md:text-[80px] text-[50px] leading-[1em] md:leading-[1.2em] ">
         <span class="w-full">
@@ -97,7 +96,7 @@
   <!-- PAGE 2 -->
 
   <section id="work"
-    class="job-container page h-[calc(100vh_-_48px)] md:h-[calc(95vh_-_48px)] grid grid-cols-6 gap-y-2 md:grid-cols-12 md:gap-y-12 self-start pt-6 w-full mt-[5vh]">
+    class="job-container page h-[calc(var(--doc-height)_-_48px)] md:h-[calc(95vh_-_48px)] grid grid-cols-6 gap-y-2 md:grid-cols-12 md:gap-y-12 self-start pt-6 w-full mt-[5vh]">
 
     <section class="col-span-6 pt-4 md:col-span-12">
       <span class="relative w-full ">
@@ -131,7 +130,7 @@
   <section class="h-20"></section>
 
   <section
-    class="job-container page h-[calc(100vh_-_48px)] md:h-[calc(95vh_-_48px)] grid grid-cols-6 gap-y-2 md:grid-cols-12 md:gap-y-12 self-start w-full mt-[5vh]">
+    class="job-container page h-[calc(var(--doc-height)_-_48px)] md:h-[calc(95vh_-_48px)] grid grid-cols-6 gap-y-2 md:grid-cols-12 md:gap-y-12 self-start w-full mt-[5vh]">
     <section class="col-span-6 md:col-span-12">
       <span class="relative w-full ">
         <span class="job-name pt-4 font-bold text-[50px] md:text-[80px] relative uppercase">

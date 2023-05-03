@@ -5,10 +5,20 @@ import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 
+
+
 const closeMenu = document.querySelector('#closeMenu');
 const mobileMenu = document.querySelector('#mobile-menu');
 const mobileMenuLinks = document.querySelectorAll('#mobile-menu li');
 const menuBtn = document.querySelector('#menu-btn');
+
+
+const documentHeight = () => {
+  const doc = document.documentElement
+  doc.style.setProperty('--doc-height', `${window.innerHeight}px`)
+ }
+ window.addEventListener('resize', documentHeight)
+ documentHeight();
 
 menuBtn.addEventListener('click', () => {
   mobileMenu.classList.add('grid');
