@@ -3,12 +3,38 @@
 @tailwind components;
 @tailwind utilities;
 
-.custBorder {
-    border: 1px solid rgb(197, 93, 140);
+
+
+.cursor {
+    position: fixed;
+    width: 40px;
+    height: 40px;
+    margin-left: -20px;
+    margin-top: -20px;
+    border-radius: 50%;
+    border: 2px solid rgb(34 211 238);
+    transition: transform .3s ease;
+    transform-origin: center center;
+    pointer-events: none;
+    z-index: 1000;
 }
+
+.grow,
+.grow-small {
+    transform: scale(4);
+    background: #fff;
+    mix-blend-mode: difference;
+    border: none;
+}
+
+.grow-small {
+    transform: scale(2.5);
+}
+
 
 html {
     scroll-behavior: smooth;
+    cursor: none;
 }
 
 :root {
@@ -36,4 +62,3 @@ html {
     font-family: "neue-montreal-light";
     src: url(./assets/fonts/NeueMontreal-Light.otf);
 }
-
